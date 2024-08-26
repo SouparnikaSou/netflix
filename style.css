@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+
+.header-image img{
+    position: absolute;
+    top: -20vh;
+    width: 100%;
+    z-index:-1;
+    
+}
+
+.head{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.logo{
+    width: 150px;
+    margin-left: 100px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: white;
+    padding: 7px 15px;
+    margin-left: 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer; 
+    
+}
+
+.select{
+    padding: 30px 40px;
+}
+
+.lang-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+    padding: 7px 10px;
+}
+
+.lang-btn img{
+    width: 10px;
+    margin-left: 10px;
+}
+
+.sign-btn:hover{
+    background-color: rgb(230, 37, 37);
+}
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header-content h1{
+    font-size: 30px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.email-signup input{
+    padding: 17px 30px;
+    border-radius: 4px;
+    background: transparent;
+    background-color: rgb(165, 153, 153);
+    border: 2px solid white;
+    
+}
+
+.email-signup .submit-btn{
+    padding: 20px 30px;
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: white;
+    margin-left: 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer; 
+
+}
+.email-signup .submit-btn:hover{
+    background-color: rgb(230, 37, 37);
+}
+
+/*.....................features..............*/
+
+
+.features{
+    padding: 700px 100px;
+    
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 120px;
+}
+
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+
+.img-col{
+    flex-basis: 40%;
+    margin-bottom: 20px;
+}
+
+.img-col img{
+    display: block;
+    width: 90%;
+    margin-top: auto;
+}
+
+/*........faq............*/
+
+.faq{
+    text-align: center;
+    padding: 10px 12%;
+}
+
+.faq h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: rgb(50, 50, 50);
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion li label:hover{
+    background-color: rgb(133, 133, 133);
+}
+label::after{
+    content: '+';
+    position: absolute;
+    font-size: 34px;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.content{
+    background: rgb(50, 50, 50);
+    text-align: center;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+   max-height: 600px;
+   padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.faq .email-signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+
+.faq small{
+    font-size: 13px;
+}
+
+
+
+/*..............footer...........*/
+
+.footer{
+    padding: 10px 16% 10px;
+    border-top: 6px solid grey;
+    color:grey;
+    position: absolute;
+    
+}
+
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer h4 a{
+    color: grey;
+}
+
+.footer-row{
+    display: flex;
+}
+.footer-col ul{
+    list-style: none;
+    padding: 4px;
+}
+
+.footer-col ul li{
+    padding: 0.5em;
+    margin: 0;
+}
+
+.footer-col ul li a{
+   color: grey; 
+}
+
+h5{
+    margin: 25px 10px;
+}
+
+
+
